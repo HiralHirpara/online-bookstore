@@ -1,4 +1,4 @@
-package model;
+package com.bookstore.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,9 +11,19 @@ public class Book {
     @GeneratedValue
     private Long id;
 
+
+
     private String title;
     private String author;
     private double price;
+
+    public Book(Long id, String title, String author, double price) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.price = price;
+    }
+    public Book() {}
 
     public Long getId() {
         return id;
