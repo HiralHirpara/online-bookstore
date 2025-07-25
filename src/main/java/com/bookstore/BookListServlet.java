@@ -11,12 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/books")
-public class BookServlet extends HttpServlet {
+@WebServlet("/bookList")
+public class BookListServlet extends HttpServlet {
 
     BookDAO bookDAO = new BookDAO();
 
-    public BookServlet() {
+    public BookListServlet() {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
