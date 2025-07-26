@@ -1,4 +1,5 @@
 target/
+.idea/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -10,7 +11,10 @@ target/
 .idea/misc.xml
 .idea/libraries/
 .idea/.gitignore
+.idea/artifacts/
 .smarttomcat/
+src/main/java/com/bookstore/MySQLConnection.java
+out/
 *.iws
 *.iml
 *.ipr
