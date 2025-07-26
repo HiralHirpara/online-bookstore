@@ -4,16 +4,17 @@
 <html>
     <head>
         <title>Book Added Successfully</title>
+        <link rel="stylesheet" href="css/onlineBookStoreStyle.css">
     </head>
     <body>
-    <center>
-        <h2 var="book" items="${book}">Book added successfully!</h2>
+    <div class="container">
+        <h2>Book added successfully!</h2>
         <p>Title: ${book.title}</p>
         <p>Author: ${book.author}</p>
         <p>Price: $${book.price}</p>
         <br/>
-        <button onclick="window.location.href='index.jsp'">Back to Home</button>
-        <button onclick="window.location.href='bookList'">See Books List</button>
-        </center>
+        <button class="btn btn-back" onclick="window.location.href='index.jsp'">Back to Home</button>
+        <button class="btn btn-list" onclick="window.location.href='bookList'">See Books List</button>
+    </div>
     </body>
 </html>
