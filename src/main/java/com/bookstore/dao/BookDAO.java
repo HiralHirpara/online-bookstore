@@ -75,6 +75,26 @@ public class BookDAO {
         }
         return  book;
     }
+    public boolean updateBook(Book book) {
+        String UPDATE_BOOK_SQL = "UPDATE book SET title = ?, author = ?, price = ? WHERE id = ?;";
+        boolean rowUpdated = false;
+
+        try (Connection connection = MySQLConnection.getConnection();
+             PreparedStatement statement = connection.prepareStatement(UPDATE_BOOK_SQL)) {
+
+            statement.setString(1, book.getTitle());
+            statement.setString(2, book.getAuthor());
+            statement.setDouble(3, book.getPrice());
+            statement.setLong(4, book.getId());
+
+            rowUpdated = statement.executeUpdate() > 0;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return rowUpdated;
+    }
 
     public void deleteBook(Long id){
         String sql = "DELETE FROM book WHERE id = ?";
