@@ -1,22 +1,21 @@
  # Java EE Online Bookstore Project
 
+### Project Overview:
+A web-based bookstore application built using Java EE technologies. It provides full CRUD (Create, Read, Update, Delete) functionality for managing a collection of books and exposes RESTful APIs for integration or frontend consumption.
+
 ###  Project Features-
 
-  1. User Registration & Login
-  2. Book Catalog (CRUD)
-  3. Shopping Cart (Session-based)
-  4. Admin Panel (Role-based)
-  5. REST API to expose books
+  1. Retrieve the list of books
+  2. Add new books to the catalog
+  3. Update existing book details
+  4. Delete books from the catalog
 
 
 ### Technologies Used-
 
-  - Layer: Tech Used
-  - Backend: Java EE (Jakarta EE)
-  - Persistence: JPA (Hibernate or EclipseLink)
+  - Backend: Java EE (Javax EE)
+  - Persistence: JPA(Java Persistence API)
   - Web Layer: Servlets + JSP
-  - Dependency Injection: CDI (@Inject)
-  - REST API: JAX-RS
-  - Web Server: Apache Tomcat/Payara
-  - DB:	MySQL/H2
+  - Web Server: Apache Tomcat
+  - Database:	MySQL
   - Build Tool:	Maven
